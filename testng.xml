@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Wikipedia Tests" parallel="tests" thread-count="2">
+    <test name="Search Test - Emulator 2">
+        <parameter name="deviceName" value="emulator1"/>
+        <parameter name="portNumber" value="7100"/>
+        <parameter name="udid" value="127.0.0.1:5585"/>
+        <classes>
+            <class name="tests.WikipediaSearchTest"/>
+        </classes>
+    </test>
+
+    <test name="Scroll Test - Emulator 1">
+        <parameter name="deviceName" value="emulator2"/>
+        <parameter name="portNumber" value="6100"/>
+        <parameter name="udid" value="127.0.0.1:5615"/>
+        <classes>
+            <class name="tests.WikipediaScrollTest"/>
+        </classes>
+    </test>
+</suite>
