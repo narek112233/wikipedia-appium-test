@@ -9,7 +9,6 @@ public class HomePage extends BasePage{
 
     public HomePage(AppiumDriver driver) {
         super(driver);
-        System.out.println("driver homePage " + driver);
         this.driver = driver;
     }
 

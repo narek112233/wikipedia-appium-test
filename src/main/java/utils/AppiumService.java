@@ -13,7 +13,6 @@ public class AppiumService {
         builder.withIPAddress("127.0.0.1");
         builder.usingPort(Integer.parseInt(portNumber));
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
-        System.out.println("portNumber " + portNumber);
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
     }
